@@ -69,9 +69,38 @@
 
 //query Selector;
 // var header = document.querySelector('#main-header');
+// console.log(header);
 // header.style.borderBottom = 'solid 4px #ccc';
 
 // var input=document.querySelector('input');
 // input.value='Hello world!';
 
+// var submit=document.querySelector('input[type="submit"]');
+// submit.value='SEND';
+
+// var item=document.querySelector('.list-group-item');
+// item.style.color='red';
+
+// var lastItem=document.querySelector('.list-group-item:last-child');
+// lastItem.style.color='blue';
+// var secondItem=document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color='orange';
+
+
+//query selectorAll
+
+var titles=document.querySelectorAll('.title');
+console.log(titles);
+titles[0].textContent='Hello';   //there is two titles class in our html code
+
+
+var secondList=document.querySelectorAll('.list-group-item');
+secondList[1].style.color='green';
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+var even=document.querySelectorAll('li:nth-child(even)');
+for(var i=0;i<odd.length;i++){
+    odd[i].style.background='green';
+    even[i].style.background='#ccc';
+}
 
